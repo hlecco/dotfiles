@@ -1,0 +1,23 @@
+## Refresh sidebar
+unmailboxes *
+
+## Receive options
+set folder = "~/.mail/uni"
+set spoolfile="~/.mail/uni/inbox"
+
+## Send options.
+set smtp_url=smtps://<++>@smtp.gmail.com
+set realname='<++>'
+set from=<++>
+set hostname="<++>"
+set signature=""
+set postponed="~/.mail/uni/drafts"
+
+# Connection options
+set ssl_force_tls = yes
+unset ssl_starttls
+
+mailboxes =inbox =all =sent =trash
+
+# Signature
+macro compose y ":exec send-message<enter>"

@@ -1,0 +1,24 @@
+set editor="vim"
+
+# recheck
+set imap_keepalive = 300
+unset imap_passive
+set mail_check = 120
+
+set mbox_type=Maildir
+
+## personal account
+## opens by default
+source ~/.config/mutt/profiles/personal
+
+set sidebar_visible = yes
+
+set sort=reverse-date-sent
+
+source solarized.muttrc
+source bindings
+
+set pgp_replyencrypt       # now crypt_replyencrypt
+set pgp_replysign          # now crypt_replysign
+set pgp_replysignencrypted # now crypt_replysignencrypted
+set pgp_show_unusable=no

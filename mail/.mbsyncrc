@@ -1,0 +1,137 @@
+Create Both
+Expunge Both
+SyncState *
+
+######################################################################################
+#
+#			mail personal
+#
+######################################################################################
+
+IMAPAccount personal 
+Host imap.gmail.com
+User <++>@gmail.com
+PassCmd "<++>"
+
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore personal-remote
+Account personal
+
+MaildirStore personal-local
+SubFolders Verbatim
+Path ~/.mail/personal/
+Inbox ~/.mail/personal/inbox/
+
+Channel personal-inbox
+Master :personal-remote:
+Slave :personal-local:
+Patterns "INBOX"
+
+Channel personal-sent
+Master :personal-remote:"[Gmail]/E-mails enviados"
+Slave :personal-local:sent
+
+Channel personal-all
+Master :personal-remote:"[Gmail]/Todos os e-mails"
+Slave :personal-local:all
+
+Channel personal-trash
+Master :personal-remote:"[Gmail]/Lixeira"
+Slave :personal-local:trash
+
+Group personal
+Channel personal-inbox
+Channel personal-sent
+Channel personal-trash
+Channel personal-all
+
+######################################################################################
+#
+#			mail uni 
+#
+######################################################################################
+
+IMAPAccount uni
+Host imap.gmail.com
+User <++>@<++>
+PassCmd "<++>"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore uni-remote
+Account uni
+
+MaildirStore uni-local
+SubFolders Verbatim
+Path ~/.mail/uni/
+Inbox ~/.mail/uni/inbox/
+
+Channel uni-inbox
+Master :uni-remote:
+Slave :uni-local:
+Patterns "INBOX"
+
+Channel uni-sent
+Master :uni-remote:"[Gmail]/Sent Mail"
+Slave :uni-local:sent
+
+Channel uni-all
+Master :uni-remote:"[Gmail]/All Mail"
+Slave :uni-local:all
+
+Channel uni-trash
+Master :uni-remote:"[Gmail]/Trash"
+Slave :uni-local:trash
+
+Group uni 
+Channel uni-inbox
+Channel uni-sent
+Channel uni-trash
+Channel uni-all
+
+######################################################################################
+#
+#			work	
+#
+######################################################################################
+
+IMAPAccount work 
+Host imap.gmail.com
+User <++>@<++>
+PassCmd "<++>"
+
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore work-remote
+Account work 
+
+MaildirStore work-local
+SubFolders Verbatim
+Path ~/.mail/work/
+Inbox ~/.mail/work/inbox/
+
+Channel work-inbox
+Master :work-remote:
+Slave :work-local:
+Patterns "INBOX"
+
+Channel work-sent
+Master :work-remote:"[Gmail]/E-mails enviados"
+Slave :work-local:sent
+
+Channel work-all
+Master :work-remote:"[Gmail]/Todos os e-mails"
+Slave :work-local:all
+
+Channel work-trash
+Master :work-remote:"[Gmail]/Lixeira"
+Slave :work-local:trash
+
+Group work 
+Channel work-inbox
+Channel work-sent
+Channel work-trash
+Channel work-all
