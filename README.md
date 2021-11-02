@@ -13,6 +13,8 @@ Togehter with the package names on either official Arch repositories or the AUR:
 
  - Sway (`sway`): wlroots based tiling window manager
  - Rofi (`rofi-lbonn-wayland-git`): quick app launching
+ - NeoMutt (`neomutt`): awesome terminal mail client (on `mail` dir)
+ - MBsync (`mbsync`): offline sync mailboxes (on `mail` dir)
 
 ## Applying dotfiles
 
