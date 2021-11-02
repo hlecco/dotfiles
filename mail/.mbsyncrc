@@ -12,7 +12,6 @@ IMAPAccount personal
 Host imap.gmail.com
 User <++>@gmail.com
 PassCmd "<++>"
-
 SSLType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt
 
@@ -101,7 +100,6 @@ IMAPAccount work
 Host imap.gmail.com
 User <++>@<++>
 PassCmd "<++>"
-
 SSLType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt
 
