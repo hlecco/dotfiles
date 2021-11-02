@@ -220,6 +220,7 @@ input 0:0:Intel_HID_events {
 # Rice:
 focus_follows_mouse no
 font pango:Iosevka Regular 10
+output "*" bg <++> fill
  
 default_border pixel 3
 gaps inner 24
