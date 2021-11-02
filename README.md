@@ -15,6 +15,14 @@ Togehter with the package names on either official Arch repositories or the AUR:
  - Rofi (`rofi-lbonn-wayland-git`): quick app launching
  - NeoMutt (`neomutt`): awesome terminal mail client (on `mail` dir)
  - MBsync (`mbsync`): offline sync mailboxes (on `mail` dir)
+ - dragon (`dragon-drag-and-drop`): drag and drop a single file
+ - fzf (`fzf`): command-line fuzzy finder
+ - termite (`termite`): Wayland-native terminal
+ - KeePassXC (`keepassxc`): password manager
+ - handlr (`handlr-bin`): easily set MIME type and extension associations
+ - PipeWire (`pipewire`, `pipewire-pulse`, `pipewire-jack`, `pipewire-alsa`, `pipewire-media-session`, `pipewire-jack-dropin`): low-latency audio that just works
+
+These packages should be enough for setting up the environment
 
 ## Applying dotfiles
 
