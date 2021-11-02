@@ -7,7 +7,7 @@ set spoolfile="~/.mail/personal/inbox"
 
 ## Send options.
 set smtp_url=smtps://<++>@smtp.gmail.com
-set from=henriquealmeidalecco@gmail.com
+set from=<++>@gmail.com
 set realname='<++>'
 set hostname="gmail.com"
 set signature=""
