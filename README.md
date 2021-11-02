@@ -23,3 +23,8 @@ If you want to use some of my config files, install `stow`, place this Git repos
 If you want to use Sway config files, for example, run `stow sway`.
 
 Remember not to delete the directory, as the config files will now be symlinks.
+
+### Placeholders
+
+Some dotfiles have <++> as placeholders where personal data would be stored.
+If you want to use my dotfiles, it is a good ideia to mantain a personal branch replacing them.
