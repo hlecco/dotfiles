@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+
+###############################################################################
+#
+# If clipboard contents are a file, open a dragon window with it
+#
+###############################################################################
+
+
+FILE=$(wl-paste)
+if [ -e "$FILE" ]; then
+    dragon $FILE
+fi

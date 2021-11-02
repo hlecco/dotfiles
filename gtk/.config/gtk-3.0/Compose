@@ -1,0 +1,2 @@
+<dead_acute> <space> : "'" apostrophe # APOSTROPHE
+<dead_acute> <dead_acute> : "´"

@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+
+###############################################################################
+#
+# Decreases brightness
+#
+###############################################################################
+
+
+CUR=$( cat /sys/class/backlight/intel_backlight/brightness )
+NEW=$((CUR - 1000))
+echo ${NEW} | sudo tee /sys/class/backlight/intel_backlight/brightness
