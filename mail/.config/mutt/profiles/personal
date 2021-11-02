@@ -1,0 +1,23 @@
+## Refresh sidebar
+unmailboxes *
+
+## Receive options
+set folder="~/.mail/personal"
+set spoolfile="~/.mail/personal/inbox"
+
+## Send options.
+set smtp_url=smtps://<++>@smtp.gmail.com
+set from=henriquealmeidalecco@gmail.com
+set realname='<++>'
+set hostname="gmail.com"
+set signature=""
+set postponed="~/.mail/personal/drafts"
+
+# Connection options
+set ssl_force_tls = yes
+unset ssl_starttls
+
+mailboxes =inbox =all =sent =trash
+
+# Signature
+macro compose y ":exec send-message<enter>"
