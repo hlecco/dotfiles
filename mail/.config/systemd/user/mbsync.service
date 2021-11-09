@@ -1,0 +1,6 @@
+[Unit]
+Description=A job that syncs all mailboxes
+
+[Service]
+Type=simple
+ExecStart=bash -c "PATH=$PATH:%h/.local/bin/ mbsync -a"
