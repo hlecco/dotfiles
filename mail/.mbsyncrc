@@ -24,21 +24,21 @@ Path ~/.mail/personal/
 Inbox ~/.mail/personal/inbox/
 
 Channel personal-inbox
-Master :personal-remote:
-Slave :personal-local:
+Far :personal-remote:
+Near :personal-local:
 Patterns "INBOX"
 
 Channel personal-sent
-Master :personal-remote:"[Gmail]/E-mails enviados"
-Slave :personal-local:sent
+Far :personal-remote:"[Gmail]/E-mails enviados"
+Near :personal-local:sent
 
 Channel personal-all
-Master :personal-remote:"[Gmail]/Todos os e-mails"
-Slave :personal-local:all
+Far :personal-remote:"[Gmail]/Todos os e-mails"
+Near :personal-local:all
 
 Channel personal-trash
-Master :personal-remote:"[Gmail]/Lixeira"
-Slave :personal-local:trash
+Far :personal-remote:"[Gmail]/Lixeira"
+Near :personal-local:trash
 
 Group personal
 Channel personal-inbox
@@ -68,21 +68,21 @@ Path ~/.mail/uni/
 Inbox ~/.mail/uni/inbox/
 
 Channel uni-inbox
-Master :uni-remote:
-Slave :uni-local:
+Far :uni-remote:
+Near :uni-local:
 Patterns "INBOX"
 
 Channel uni-sent
-Master :uni-remote:"[Gmail]/Sent Mail"
-Slave :uni-local:sent
+Far :uni-remote:"[Gmail]/Sent Mail"
+Near :uni-local:sent
 
 Channel uni-all
-Master :uni-remote:"[Gmail]/All Mail"
-Slave :uni-local:all
+Far :uni-remote:"[Gmail]/All Mail"
+Near :uni-local:all
 
 Channel uni-trash
-Master :uni-remote:"[Gmail]/Trash"
-Slave :uni-local:trash
+Far :uni-remote:"[Gmail]/Trash"
+Near :uni-local:trash
 
 Group uni 
 Channel uni-inbox
@@ -112,21 +112,21 @@ Path ~/.mail/work/
 Inbox ~/.mail/work/inbox/
 
 Channel work-inbox
-Master :work-remote:
-Slave :work-local:
+Far :work-remote:
+Near :work-local:
 Patterns "INBOX"
 
 Channel work-sent
-Master :work-remote:"[Gmail]/E-mails enviados"
-Slave :work-local:sent
+Far :work-remote:"[Gmail]/E-mails enviados"
+Near :work-local:sent
 
 Channel work-all
-Master :work-remote:"[Gmail]/Todos os e-mails"
-Slave :work-local:all
+Far :work-remote:"[Gmail]/Todos os e-mails"
+Near :work-local:all
 
 Channel work-trash
-Master :work-remote:"[Gmail]/Lixeira"
-Slave :work-local:trash
+Far :work-remote:"[Gmail]/Lixeira"
+Near :work-local:trash
 
 Group work 
 Channel work-inbox

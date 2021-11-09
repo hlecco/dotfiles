@@ -15,6 +15,7 @@ Togehter with the package names on either official Arch repositories or the AUR:
  - Rofi (`rofi-lbonn-wayland-git`): quick app launching
  - NeoMutt (`neomutt`): awesome terminal mail client (on `mail` dir)
  - MBsync (`mbsync`): offline sync mailboxes (on `mail` dir)
+ - Urlscan (`urlscan`): Mutt and terminal URL selector
  - dragon (`dragon-drag-and-drop`): drag and drop a single file
  - fzf (`fzf`): command-line fuzzy finder
  - termite (`termite`): Wayland-native terminal
