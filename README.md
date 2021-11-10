@@ -23,6 +23,7 @@ Togehter with the package names on either official Arch repositories or the AUR:
  - handlr (`handlr-bin`): easily set MIME type and extension associations
  - PipeWire (`pipewire`, `pipewire-pulse`, `pipewire-jack`, `pipewire-alsa`, `pipewire-media-session`, `pipewire-jack-dropin`): low-latency audio that just works
  - Neovim (`neovim`): Vim, but *neo*
+ - ble.sh (`blesh`): cool stuff for Bash, like better completion
 
 These packages should be enough for setting up the environment
 
