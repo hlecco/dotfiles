@@ -24,6 +24,7 @@ Togehter with the package names on either official Arch repositories or the AUR:
  - PipeWire (`pipewire`, `pipewire-pulse`, `pipewire-jack`, `pipewire-alsa`, `pipewire-media-session`, `pipewire-jack-dropin`): low-latency audio that just works
  - Neovim (`neovim`): Vim, but *neo*
  - ble.sh (`blesh`): cool stuff for Bash, like better completion
+ - autojump (`autojump-rs`): quickly navigate between directories from the terminal
 
 These packages should be enough for setting up the environment
 
