@@ -19,5 +19,8 @@ unset ssl_starttls
 
 mailboxes =inbox =all =sent =trash
 
+# Sync mailbox
+macro index G "!mbsync personal^M" "Update through mbsync"
+
 # Signature
 macro compose y ":exec attach-file<enter>~/.config/mutt/signatures/work.html<enter>:exec toggle-disposition<enter>:exec send-message<enter>"
