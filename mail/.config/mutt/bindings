@@ -6,6 +6,5 @@ bind index,pager \Co sidebar-open	# Ctrl-O - Open highlited mailbox
 macro index 1 "<sync-mailbox><enter-command>source ~/.config/mutt/profiles/personal<enter><change-folder>!<enter>"
 macro index 2 "<sync-mailbox><enter-command>source ~/.config/mutt/profiles/uni<enter><change-folder>!<enter>"
 macro index 3 "<sync-mailbox><enter-command>source ~/.config/mutt/profiles/work<enter><change-folder>!<enter>"
-macro index G "!mbsync -a^M" "Update through mbsync"
 macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
