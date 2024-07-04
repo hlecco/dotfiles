@@ -1,0 +1,18 @@
+defaults read -g AppleInterfaceStyle &> /dev/null
+LIGHTMODE=$?
+
+if [ $LIGHTMODE == 1 ]; then
+  # LIGHT
+  ln -sf ~/.config/mutt/themes/light ~/.config/mutt/theme
+  ln -sf ~/.config/tmux/themes/light.conf ~/.config/tmux/theme.conf
+  ln -sf ~/.config/harlequin/themes/light ~/.config/harlequin/theme
+else
+  # DARK
+  ln -sf ~/.config/mutt/themes/dark ~/.config/mutt/theme
+  ln -sf ~/.config/tmux/themes/dark.conf ~/.config/tmux/theme.conf
+  ln -sf ~/.config/harlequin/themes/dark ~/.config/harlequin/theme
+fi
+
+
+# Live reload
+tmux source ~/.tmux.conf
